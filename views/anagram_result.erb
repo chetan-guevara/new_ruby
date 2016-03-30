@@ -1,2 +1,6 @@
 <h1>Is it An Anagram?</h1>
-<h2> <%= @anagram_answer %> </h2>
+<% if @anagram_answer %>
+<h2> Yes </h2>
+<% else %>
+<h2> No </h2> 
+<% end %> 
