@@ -1,0 +1,16 @@
+<h1>Hangman</h1>
+
+<p>Number of Failed Tries</p>
+<p><%= @num_failed_tries %> </p>
+
+<p>Current Guess </p>
+<p><%= @current_guess%></p>
+
+<p>Guess a letter</p>
+
+<form action="/guess" method="get">
+  <label for="letter">Guess a letter</label>
+  <input id="letter" name="letter" type="text">
+
+  <button type="submit">Guess</button>
+</form>
