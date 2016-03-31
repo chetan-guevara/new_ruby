@@ -1,6 +1,6 @@
 class Task
 
-  attr_reader(:description)
+  attr_reader(:description, :list_id)
 
   define_method(:initialize) do |attributes|
     @description = attributes.fetch(:description)
